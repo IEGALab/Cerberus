@@ -1,0 +1,91 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'DialogAluno.ui'
+#
+# Created by: PyQt5 UI code generator 5.10
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_DialogAluno(object):
+    def setupUi(self, DialogAluno):
+        DialogAluno.setObjectName("DialogAluno")
+        DialogAluno.resize(360, 300)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(DialogAluno.sizePolicy().hasHeightForWidth())
+        DialogAluno.setSizePolicy(sizePolicy)
+        DialogAluno.setMaximumSize(QtCore.QSize(360, 400))
+        self.label_4 = QtWidgets.QLabel(DialogAluno)
+        self.label_4.setGeometry(QtCore.QRect(10, 160, 60, 16))
+        self.label_4.setObjectName("label_4")
+        self.lineNome = QtWidgets.QLineEdit(DialogAluno)
+        self.lineNome.setGeometry(QtCore.QRect(60, 30, 271, 21))
+        self.lineNome.setObjectName("lineNome")
+        self.label = QtWidgets.QLabel(DialogAluno)
+        self.label.setGeometry(QtCore.QRect(10, 30, 60, 16))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(DialogAluno)
+        self.label_2.setGeometry(QtCore.QRect(10, 70, 60, 16))
+        self.label_2.setObjectName("label_2")
+        self.label_5 = QtWidgets.QLabel(DialogAluno)
+        self.label_5.setGeometry(QtCore.QRect(10, 200, 60, 16))
+        self.label_5.setObjectName("label_5")
+        self.comboBoxCurso = QtWidgets.QComboBox(DialogAluno)
+        self.comboBoxCurso.setGeometry(QtCore.QRect(60, 70, 281, 26))
+        self.comboBoxCurso.setObjectName("comboBoxCurso")
+        self.comboBoxCurso.addItem("")
+        self.comboBoxCurso.addItem("")
+        self.comboBoxCurso.addItem("")
+        self.comboBoxCurso.addItem("")
+        self.comboBoxCurso.addItem("")
+        self.comboBoxCurso.addItem("")
+        self.comboBoxCurso.addItem("")
+        self.label_3 = QtWidgets.QLabel(DialogAluno)
+        self.label_3.setGeometry(QtCore.QRect(10, 120, 60, 16))
+        self.label_3.setObjectName("label_3")
+        self.lineTelefone = QtWidgets.QLineEdit(DialogAluno)
+        self.lineTelefone.setGeometry(QtCore.QRect(80, 160, 141, 21))
+        self.lineTelefone.setObjectName("lineTelefone")
+        self.lineMatricula = QtWidgets.QLineEdit(DialogAluno)
+        self.lineMatricula.setGeometry(QtCore.QRect(80, 120, 201, 21))
+        self.lineMatricula.setObjectName("lineMatricula")
+        self.lineEmail = QtWidgets.QLineEdit(DialogAluno)
+        self.lineEmail.setGeometry(QtCore.QRect(80, 200, 221, 21))
+        self.lineEmail.setObjectName("lineEmail")
+        self.pushButtonOk = QtWidgets.QPushButton(DialogAluno)
+        self.pushButtonOk.setGeometry(QtCore.QRect(40, 250, 113, 32))
+        self.pushButtonOk.setObjectName("pushButtonOk")
+        self.pushButtonCancel = QtWidgets.QPushButton(DialogAluno)
+        self.pushButtonCancel.setGeometry(QtCore.QRect(180, 250, 113, 32))
+        self.pushButtonCancel.setObjectName("pushButtonCancel")
+
+        self.retranslateUi(DialogAluno)
+        QtCore.QMetaObject.connectSlotsByName(DialogAluno)
+        DialogAluno.setTabOrder(self.lineNome, self.comboBoxCurso)
+        DialogAluno.setTabOrder(self.comboBoxCurso, self.lineMatricula)
+        DialogAluno.setTabOrder(self.lineMatricula, self.lineTelefone)
+        DialogAluno.setTabOrder(self.lineTelefone, self.lineEmail)
+        DialogAluno.setTabOrder(self.lineEmail, self.pushButtonOk)
+        DialogAluno.setTabOrder(self.pushButtonOk, self.pushButtonCancel)
+
+    def retranslateUi(self, DialogAluno):
+        _translate = QtCore.QCoreApplication.translate
+        DialogAluno.setWindowTitle(_translate("DialogAluno", "Dialog"))
+        self.label_4.setText(_translate("DialogAluno", "Telefone:"))
+        self.label.setText(_translate("DialogAluno", "Nome:"))
+        self.label_2.setText(_translate("DialogAluno", "Curso:"))
+        self.label_5.setText(_translate("DialogAluno", "Email:"))
+        self.comboBoxCurso.setItemText(0, _translate("DialogAluno", "Sistemas de Informação"))
+        self.comboBoxCurso.setItemText(1, _translate("DialogAluno", "Licenciatura em Computação"))
+        self.comboBoxCurso.setItemText(2, _translate("DialogAluno", "Engenharia Ambiental"))
+        self.comboBoxCurso.setItemText(3, _translate("DialogAluno", "Agrimensura"))
+        self.comboBoxCurso.setItemText(4, _translate("DialogAluno", "Agronomia"))
+        self.comboBoxCurso.setItemText(5, _translate("DialogAluno", "Engenharia de Pesca"))
+        self.comboBoxCurso.setItemText(6, _translate("DialogAluno", "Engenharia Florestal"))
+        self.label_3.setText(_translate("DialogAluno", "Matricula:"))
+        self.pushButtonOk.setText(_translate("DialogAluno", "OK"))
+        self.pushButtonCancel.setText(_translate("DialogAluno", "Cancel"))
+
